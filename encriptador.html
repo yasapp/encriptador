@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+   <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+    
+    
+    </head>
+
+     <body>
+      <header>
+        <img src="imagenes/Vector.png" 
+        alt="Logo de Alura con la inicial de la letra a">
+      </header>
+        <main>
+            <section>
+              <textarea class="input-texto" 
+               cols="40" rows="6"
+               placeholder="Ingrese el texto aqui"
+               oninput="this.value = this.value.replace(/[^a-zA-Z0-9 &nbsp]/,'')"></textarea>
+              <div class="botones">
+                <button class="encriptar" onclick="btnEncriptador()">
+                  Encriptar</button>
+                <button class="desencriptar" onclick="btnDesencriptar()">
+                  Desencriptar</button>
+              </div>
+            </section>
+              
+            <section>
+              <textarea class="mensaje" cols="18"
+              rows="8"> </textarea>
+              <div>
+                <button class="copiar" onclick="copiar()">
+                 Copiar</button>
+              </div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
