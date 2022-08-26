@@ -1,2 +1,2 @@
-# encriptador.github.oi
+# encriptador
 primer desafío challengeone3 segunda opción 
